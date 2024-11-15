@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongodb');
 
 // Replace <username> and <password> with your MongoDB credentials
-const uri = 'mongodb+srv://JnD:Cluster%40JnD@jnd001.grwuh.mongodb.net/Login?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://*#######*.grwuh.mongodb.net/Login?retryWrites=true&w=majority';
 
 const client = new MongoClient(uri);
 
