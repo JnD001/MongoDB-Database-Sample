@@ -1,0 +1,19 @@
+body {
+  background-image: linear-gradient(to right,rgb(221, 49, 49),rgb(39, 39, 251));
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.field{
+  padding-top: 10px;
+  /* width: 200px; */
+}
+a {
+  color: #00B7FF;
+}
+
+
