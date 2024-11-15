@@ -15,9 +15,9 @@ router.get('/', function(req, res, next) {
 router.post('/submit-form', async (req, res) => {
   try {
     const db = await connectDB();
-    const formData = req.body; // Assuming form data is sent in the request body
+    const formData = req.body;
 
-    // Insert form data into a collection (replace 'formCollection' with your collection name)
+   
     const result = await db.collection('users').insertOne(formData);
     
     console.log("Form data saved:", result);
