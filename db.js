@@ -1,8 +1,7 @@
 const { MongoClient } = require('mongodb');
+require('dotenv').config(); // Load environment variables
 
-
-const uri = 'mongodb+srv://*#######*.grwuh.mongodb.net/Login?retryWrites=true&w=majority';
-
+const uri = process.env.MONGODB_URI; // Access the URI from .env
 const client = new MongoClient(uri);
 
 let db;
@@ -12,7 +11,7 @@ async function connectDB() {
     try {
       await client.connect();
       console.log("Connected to MongoDB");
-      db = client.db('Login'); 
+      db = client.db(process.env.DATABASE_NAME); // Use database name from .env
     } catch (error) {
       console.error("Error connecting to MongoDB:", error);
       process.exit(1); // Exit if there's a connection error
